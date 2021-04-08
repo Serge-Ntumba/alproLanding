@@ -422,24 +422,94 @@ nav {
           }
           td {
               padding: 7px;
+              a {
+                  text-decoration: none;
+              }
           }
         }
     }
 }
 
+
+
+// form sectiom
+
 .formsection {
-    border: 2px solide blue;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    gap: 30px;
+    margin-top: 70px;
+    font-family: 'geomanistregular';
     form {
-        border: 2px solide blue;
-        button {
-            width: 50%;
+        color:#021D6D;
+        border-top: 1px solid #021D6D;
+        border-left: 1px solid #021D6D;
+        border-right: 1px solid #021D6D;
+        font-family: 'geomanistregular';
+        
+        textarea {
+            width: 100%;
+            border-top: 1px solid #021D6D;
+            resize: none;
+            height: 130px;
+            border-left:none;
+            border-right: none;
+            border-bottom: none;
+            padding-left: 8px;
+            font-family: 'geomanistregular';
+            font-size: 17px;
         }
+        input {
+            border: none;
+            
+        }
+        input[type=tel] {
+            border-left: 1px solid #021D6D;
+            padding-left: 8px;
+            font-size: 17px;
+        }
+        input[type=text] {
+            padding-left: 8px;
+            font-size: 17px;
+        }
+        button {
+            color: white;
+            background-color: #021D6D;
+            border: none;
+            width: 100%;
+            height: 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media  screen and (max-width: 800px) {
+    .formsection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
+@media  screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+// footer
+
+.footer {
+    background-color: #000046;
+    margin-top: 30px;
+    .more-about-alpro {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+}
 
 
 
