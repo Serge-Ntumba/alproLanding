@@ -399,6 +399,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     a {
         margin-bottom: 50px;
     }
@@ -409,7 +410,7 @@ nav {
     justify-content: center;
     font-family: 'geomanistregular';
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     table {
         width: 50%;
         margin-top: 20px;
@@ -437,8 +438,9 @@ nav {
 .formsection {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 70px;
+    gap: 60px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     font-family: 'geomanistregular';
     form {
         color:#021D6D;
@@ -507,10 +509,104 @@ nav {
     .more-about-alpro {
         display: flex;
         justify-content: space-around;
-        color: white;
+        align-content: center;
+        padding-top: 30px;
+        .formore {
+             display: flex;
+             flex-direction: column;
+             justify-items: center;
+             justify-content: center;
+             h2 {
+                font-family:"LunchBoxW05-Regular", Roboto, sans-serif;
+                color: rgb(26, 124, 173);
+                font-size: 1.5rem;
+                white-space: nowrap;
+                text-transform: uppercase;
+                line-height: 1.2;
+             }
+             ul {
+                 margin-top: 0px;
+                 li {
+                     display: inline-block;
+                     margin: 20px;
+                     a {
+                         text-decoration: none;
+                         line-height: 1.2;
+                         text-decoration: none;
+                         color: rgb(231, 231, 231);
+                         transition: color 100ms ease 0s;
+                     }
+                 }
+             }
+        }
+        .socia_m_icon {
+            display: flex;
+            gap: 12px;
+            h2 {
+                font-family:"LunchBoxW05-Regular", Roboto, sans-serif;
+                color: rgb(26, 124, 173);
+                font-size: 1.5rem;
+                white-space: nowrap;
+                line-height: 1.2;
+            }
+            a {
+                margin-top: 5px;
+            }
+           img {
+               width: 18px;  
+               background-color: white;
+           }
+        }
+    }
+
+    hr {
+        width: 63%;
+        margin: auto 18.5%;
+        color: rgb(26, 124, 173);
+        height:1px;
+        opacity: 0.4;
+    }
+
+    .bottom-info {
+        color: rgb(26, 124, 173);
+        width: 63%;
+        margin: auto 18.5%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        
+        .left {
+            ul {
+                
+                li {
+                    display: inline-block;
+                    padding: 10px;
+                    a {
+                        color: rgb(231, 231, 231);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .right {
+            color: rgb(231, 231, 231);
+        }
+
     }
 }
 
-
+@media  screen and (max-width: 800px) {
+    .more-about-alpro {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        .formore {
+            margin-top: 30px;
+        }
+    }
+}
 
 

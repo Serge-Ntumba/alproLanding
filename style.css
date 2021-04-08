@@ -464,6 +464,9 @@ nav .burger div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .buttnandwinners a {
@@ -479,7 +482,7 @@ nav .burger div {
           justify-content: center;
   font-family: 'geomanistregular';
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .div-table table {
@@ -512,8 +515,9 @@ nav .burger div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
-  margin-top: 70px;
+  gap: 60px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   font-family: 'geomanistregular';
 }
 
@@ -595,6 +599,132 @@ nav .burger div {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: white;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 30px;
+}
+
+.footer .more-about-alpro .formore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .more-about-alpro .formore h2 {
+  font-family: "LunchBoxW05-Regular", Roboto, sans-serif;
+  color: #1a7cad;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.footer .more-about-alpro .formore ul {
+  margin-top: 0px;
+}
+
+.footer .more-about-alpro .formore ul li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.footer .more-about-alpro .formore ul li a {
+  text-decoration: none;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #e7e7e7;
+  -webkit-transition: color 100ms ease 0s;
+  transition: color 100ms ease 0s;
+}
+
+.footer .more-about-alpro .socia_m_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.footer .more-about-alpro .socia_m_icon h2 {
+  font-family: "LunchBoxW05-Regular", Roboto, sans-serif;
+  color: #1a7cad;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.footer .more-about-alpro .socia_m_icon a {
+  margin-top: 5px;
+}
+
+.footer .more-about-alpro .socia_m_icon img {
+  width: 18px;
+  background-color: white;
+}
+
+.footer hr {
+  width: 63%;
+  margin: auto 18.5%;
+  color: #1a7cad;
+  height: 1px;
+  opacity: 0.4;
+}
+
+.footer .bottom-info {
+  color: #1a7cad;
+  width: 63%;
+  margin: auto 18.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer .bottom-info .left ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.footer .bottom-info .left ul li a {
+  color: #e7e7e7;
+  text-decoration: none;
+}
+
+.footer .bottom-info .right {
+  color: #e7e7e7;
+}
+
+@media screen and (max-width: 800px) {
+  .more-about-alpro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .more-about-alpro .formore {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
