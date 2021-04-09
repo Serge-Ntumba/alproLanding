@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'geomanistregular';
 }
 
 @font-face {
@@ -36,6 +37,25 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'geomanistmedium';
+  src: url("./fonts/geomanist/Geomanist-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'geomanistblack';
+  src: url("./fonts/geomanist/Geomanist-Black.otf");
+  src: url("./fonts/geomanist/AnyConv.com__Geomanist-Medium (1).woff"), url("./fonts/geomanist/AnyConv.com__Geomanist-Black.woff2");
+}
+
+@font-face {
+  font-family: 'geomanistbold';
+  src: url("./fonts/geomanist/Geomanist-Bold.otf");
+  src: url("./fonts/geomanist/AnyConv.com__Geomanist-Bold.woff"), url("./fonts/geomanist/AnyConv.com__Geomanist-Black.woff2");
+}
+
 header {
   width: 90%;
   margin: auto 5%;
@@ -67,25 +87,27 @@ nav .logo {
 }
 
 nav .nav-links {
-  font-family: 'geomanistregular', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 30%;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
 }
 
 nav .nav-links li {
   list-style: none;
-  font-family: 'geomanistregular';
-  font-weight: 900;
-  font-size: 21px;
 }
 
 nav .nav-links li a {
   color: #021D6D;
   text-decoration: none;
+  font-family: 'geomanistbold', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 nav .burger {
@@ -171,6 +193,7 @@ nav .burger div {
   }
   nav .nav-links li {
     border-bottom: 2px solid #979691;
+    font-family: 'geomanistmedium';
   }
   nav .nav-links li {
     opacity: 0;
@@ -210,83 +233,101 @@ nav .burger div {
   left: -75px;
 }
 
-.heroimageandmesage {
+.dartandtext {
+  position: absolute;
+  top: 350px;
+  left: 200px;
+}
+
+.dartandtext .dart img {
+  position: absolute;
+  top: 350px;
+  left: 200px;
+  width: 100%;
+  max-width: 368px;
+  max-height: auto;
+}
+
+.wrapper-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 40px;
   width: 90%;
   margin-left: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 35px;
+  margin-top: 90px;
 }
 
-.heroimageandmesage .heromessage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 20px;
+.wrapper-section .wrapper-text {
+  width: 30%;
 }
 
-.heroimageandmesage .heromessage img {
+.wrapper-section .wrapper-text h1 {
+  color: #021D6D;
+  font-family: "LunchBoxW05-Regular";
+  font-size: 4em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+.wrapper-section .wrapper-text p {
+  font-family: 'geomanistmedium', sans-serif;
+  line-height: 20px;
+  color: #2d2d2d;
+}
+
+.wrapper-section .wrapper-text .par1 {
+  margin-bottom: 20px;
+}
+
+.wrapper-section .wrapper-text .par2 {
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.wrapper-section .wrapper-text .par3 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.wrapper-section .hero-image-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.wrapper-section .hero-image-wrapper .image1-dart {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.wrapper-section .hero-image-wrapper .image1-dart img {
   width: 100%;
-  max-width: 266px;
-  max-height: 133px;
+  max-width: 428px;
+  max-height: 374px;
 }
 
-.heroimageandmesage .heromessage p {
-  font-family: 'geomanistregular';
-  font-weight: 500;
-  font-size: 18px;
-  text-align: justify;
-  margin-top: 15px;
-  color: #252424;
+.wrapper-section .hero-image-wrapper .image1-dart .par4 {
+  width: 60%;
+  font-family: 'geomanistmedium', sans-serif;
+  line-height: 20px;
+  color: #2d2d2d;
+  margin-top: -50px;
 }
 
-.heroimageandmesage .heroimage img {
+.wrapper-section .hero-image-wrapper .image2-hero-image img {
   width: 100%;
-  max-width: 1031px;
-  max-height: 563px;
-}
-
-@media screen and (max-width: 800px) {
-  .heroimageandmesage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 90%;
-    margin: auto 5%;
-  }
-  .heroimageandmesage .heromessage {
-    display: none;
-  }
-  .heroimageandmesage .heroimage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .heroimageandmesage .heroimage img {
-    border-radius: 10px;
-  }
-  .nuts {
-    display: none;
-  }
+  max-width: 1036px;
+  max-height: 728px;
 }
 
 .yellow-flowers {

@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'geomanistregular';
 }
 
 @font-face{
@@ -45,6 +46,28 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'geomanistmedium';
+    src: url('./fonts/geomanist/Geomanist-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geomanistblack';
+    src: url('./fonts/geomanist/Geomanist-Black.otf');
+    src: url('./fonts/geomanist/AnyConv.com__Geomanist-Medium\ \(1\).woff'), url('./fonts/geomanist/AnyConv.com__Geomanist-Black.woff2');
+   
+}
+
+@font-face {
+    font-family: 'geomanistbold';
+    src: url('./fonts/geomanist/Geomanist-Bold.otf');
+    src: url('./fonts/geomanist/AnyConv.com__Geomanist-Bold.woff'), url('./fonts/geomanist/AnyConv.com__Geomanist-Black.woff2');
+   
+}
+
+
 
 // the header styles
 
@@ -72,21 +95,21 @@ nav {
         width: 105px;
     }
     .nav-links {
-        font-family: 'geomanistregular', sans-serif;
         display: flex;
         justify-content: space-around;
         width: 30%;
+        font-kerning: normal;
     }
     .nav-links li  {
         list-style: none;
-        font-family: 'geomanistregular';
-        font-weight: 900;
-        font-size: 21px;
     }
     .nav-links li a {
         color:#021D6D;
         text-decoration: none;
-
+        font-family: 'geomanistbold', sans-serif;
+        font-weight: 900;
+        font-size: 1rem;
+        line-height: 1;
     }
 
     .burger {
@@ -145,6 +168,7 @@ nav {
 
         .nav-links li  {
             border-bottom: 2px solid #979691;
+            font-family: 'geomanistmedium';
         }
         .nav-links li {
             opacity: 0;
@@ -188,80 +212,93 @@ nav {
     left: -75px;
 }
 
+.dartandtext {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    .dart {
+        img {
+            position: absolute;
+    top: 350px;
+    left: 200px;
+           width: 100%;
+           max-width: 368px;
+           max-height: auto;
+        }
+    }
+}
+
+
+
 // the hero section styles
 
-
-.heroimageandmesage {
-    // background-color: rgb(248, 248, 244);
-    width: 90%;
-    margin-left: 10%;
+.wrapper-section {
     display: flex;
-    justify-content: space-between;
-    // justify-content: flex-end;
-    
-    margin-top: 35px;
-    .heromessage {
-        // background-color:rgba(85, 74, 74, 0.913);
-       display: flex;
-       flex-direction: column;
-       margin-top: 20px;
-       img {
-           width: 100%;
-           max-width: 266px;
-           max-height: 133px;
-       }
-        
+    justify-content: flex-end;
+    margin-top: 40px;
+    width:90%;
+    margin-left: 10%;
+    margin-top: 90px;
+    .wrapper-text {
+        width: 30%;
+        h1 {
+            color:#021D6D;
+            font-family:"LunchBoxW05-Regular";
+            font-size: 4em;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            line-height: 1;
+            margin-bottom: 50px;
+        }
         p {
-            // background-color: seagreen;
-            font-family: 'geomanistregular';
-            font-weight: 500;
-            font-size: 18px;
-            text-align: justify;
-            margin-top: 15px;
-            color: #252424;
+            font-family: 'geomanistmedium', sans-serif;
+            line-height: 20px;
+            color: rgb(45, 45, 45);
+            
+        }
+        .par1 {
+            margin-bottom: 20px;
+        }
+        .par2 {
+            margin-bottom: 20px;
+            width: 80%;
+        }
+        .par3 {
+            margin-bottom: 20px;
+            margin-top: 30px;
         }
     }
-    .heroimage img {
-           width: 100%;
-           max-width: 1031px;
-           max-height: 563px;
-    }
-}
-
-@media  screen and (max-width: 800px) {
-    .heroimageandmesage {
-            display: flex;
-           flex-direction: column;
-           align-items: center;
-           max-width: 90%;
-           margin: auto 5%;
-
-        .heromessage {
-            display: none;
-        }
-        .heroimage {
-            display: flex;
-            justify-items: center;
-            justify-content: center;
+    .hero-image-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        .image1-dart {
+            align-self: end;
             img {
-                border-radius: 10px;
+                width: 100%;
+                max-width: 428px;
+                max-height: 374px;
+            }
+            .par4 {
+           
+                width: 60%;
+                font-family: 'geomanistmedium', sans-serif;
+                line-height: 20px;
+                color: rgb(45, 45, 45);
+                margin-top: -50px;
             }
         }
-        //    display: flex;
-        //    flex-direction: column;
-        //    align-items: center;
-        //    max-width: 90%;
-        //    margin: auto 5%;
-        //    .heromessage {
-        //        display: flex;
-        //        flex-direction: row;
-        //        width: 80%;
-        //    }
+        .image2-hero-image {
+            img {
+                width: 100%;
+                max-width: 1036px;
+                max-height: 728px;
+            }
         }
-        .nuts {
-            display: none;
-        }
+
+    }
 }
+
 
 
 // process of taking part
